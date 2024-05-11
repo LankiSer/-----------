@@ -527,3 +527,129 @@ ul{
     width: 100%;
 }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, .container, .row {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    z-index: 9;
+    height: 100px;
+    padding: 20px 10vw;
+    background: #161813;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.link-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-section-title, 
+.section-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize; 
+}
+
+.hero-section-sub-heading,
+.section-para {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.background, .background-image, .grid-slider, .tours-container {
+    width: 100%;
+    height: 100%;
+}
+
+.tour-card, .tour-card2 {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: end;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.services, .travel {
+    position: relative;
+    padding: 80px 10vw;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .navbar, .links-container {
+        flex-direction: column;
+    }
+
+    .link-item {
+        margin: 10px 0;
+    }
+
+    .hero-section-title {
+        font-size: 40px;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 16px;
+    }
+
+    .tours-container, .tour-card, .tour-card2 {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .footer-col {
+        width: 100%;
+        text-align: center;
+    }
+}
+
