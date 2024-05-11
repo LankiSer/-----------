@@ -653,3 +653,148 @@ body, .container, .row {
     }
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Основные стили */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #161813;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #161813;
+    padding: 10px;
+}
+
+.links-container {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-section-title {
+    color: #fff;
+    margin: 20px 0;
+}
+
+.hero-section-sub-heading {
+    color: #ccc;
+}
+
+.tour-img {
+    width: 100%;
+    height: auto;
+}
+
+.tours-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-card {
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #24262b;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-col {
+    margin-bottom: 20px;
+}
+
+/* Медиа запросы для разных размеров экрана */
+
+@media (max-width: 780px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero-section-title {
+        font-size: 24px;
+    }
+
+    .tours-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .links-container {
+        flex-direction: column;
+    }
+
+    .link-item {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-section {
+        padding: 20px;
+    }
+
+    .hero-section-title {
+        font-size: 20px;
+    }
+
+    .hero-section-sub-heading {
+        font-size: 16px;
+    }
+
+    .tour-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour-img {
+        width: 90vw;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-col {
+        margin-bottom: 10px;
+    }
+}
+
+
