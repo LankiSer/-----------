@@ -6,6 +6,7 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     display: flex;
+    background: #161813;
     justify-content: center;
     justify-items: baseline;
     align-items: center;
