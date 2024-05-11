@@ -11,6 +11,7 @@ body{
     align-items: center;
     background: #161813;
     flex-direction: column;
+    min-width: 760px;
 }
 
 
