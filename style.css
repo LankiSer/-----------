@@ -22,9 +22,7 @@ body{
     padding: 20px 10vw;
 }
 
-.navbar.bg{
-    background: #161813;
-}
+
 
 .links-container{
     display: flex;
