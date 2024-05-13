@@ -9,9 +9,9 @@ body{
     justify-content: center;
     justify-items: baseline;
     align-items: center;
+    min-width: 760px;
     background: #161813;
     flex-direction: column;
-    min-width: 760px;
 }
 
 
